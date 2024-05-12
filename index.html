@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h1 class="logo">Devil</h1>
+				<ul class="nav_list">
+					<li class="nav_item"><a href class="nav_link">Инструменты</a></li>
+					<li class="nav_item"><a href class="nav_link">Мобильная связь</a></li>
+					<li class="nav_item"><a href class="nav_link">Сезонный товар</a></li>
+					<li class="nav_item"><a href class="nav_link">Техника</a></li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger_line"></div>
+					<div class="burger_line"></div>
+					<div class="burger_line"></div>
+				</div>
+			</nav>
+			<button class="btn_menu" id="btn_menu">Menu</button>
+			<div class="header_menu" id="menu">
+				<ul class="menu_list">
+					<li class="menu_item"> <a href="" class="menu_link">вход</a> </li>
+					<li class="menu_item"> <a href=""  class="menu_link">корзина</a> </li>
+					<li class="menu_item"> <a href=""  class="menu_link">скидки</a> </li>
+					<li class="menu_item"> <a href=""  class="menu_link">реклама</a> </li>
+					<li class="menu_item">
+						<div class="theme">
+							<li class="theme_title">тема</li>
+							<ul class="theme_list">
+								<li class="theme_item">
+									<div class="theme_light" onclick="choiceLight()"></div>
+								</li>
+								<li class="theme_item">
+									<div class="theme_dark" onclick="choiceDark()"></div>
+								</li>
+
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		
+	</header>
+	<main class="main">
+		<section class="shop">
+			<div class="container">
+				<h1 class="shop_title">Яндекс станция(лайт)</h1>
+				<div class="itc-slider" data-slider="itc-slider">
+                   <div class="itc-slider-wrapper">
+                           <div class="itc-slider-items">
+                             <div class="itc-slider-item">
+                               <img class="shop_img" src="img/yandex.jpg">
+                            </div>
+                        <div class="itc-slider-item">
+                            <img class="shop_img" src="img/yandex1.jpg">
+                       </div>
+                    <div class="itc-slider-item">
+                    	<img class="shop_img" src="img/yandex2.jpg">
+        
+                  </div>
+               </div>
+            </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+  <button class="itc-slider-btn itc-slider-btn-next"></button>
+           </div>
+           <div class="accordion" id="accordion-1">
+           	<div class="accordion__item">
+           		<h2 class="accordion__header">Описание</h2>
+           		<div class="accordion__body"> 
+           			<p class="shop_text">Мощность 5 Вт,
+Чтобы приятно звучать,
+Сенсорные кнопки,
+Чтобы вам было удобнее,
+4 микрофона,
+Чтобы лучше вас слышать,
+Bluetooth,
+Чтобы ставить музыку с телефона</p>
+</div>
+            <div class="accordion__item">
+           		<h2 class="accordion__header">Цена</h2>
+           		<div class="accordion__body">
+           		<p class="shop_price">5000 &#8381;</p>
+<button class="shop_btn" id="btn" onclick="buy()">Приобрести</button>
+			
+           	</div>
+
+           	</div>
+
+
+         	</div>
+
+           	
+           </div>
+
+				
+				<!-- <h2 class="shop_title">Описание</h2>
+				<p class="shop_text">Мощность 5 Вт
+Чтобы приятно звучать
+Сенсорные кнопки
+Чтобы вам было удобнее
+4 микрофона
+Чтобы лучше вас слышать
+Bluetooth
+Чтобы ставить музыку с телефона</p>
+<h2 class="shop_title">Цена</h2>
+<p class="shop_price">5000 &#8381;</p>
+<button class="shop_btn" id="btn" onclick="buy()">Приобрести</button> -->
+			</div>
+		</section>
+		<section class="map">
+			<div class="container">
+				<h1 class="map__title">Местонахождение</h1>
+				<ul class="map__list">	
+				<li class="map__item">
+					<h2 class="list__title">Google</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37551.34535869561!2d39.16099771625161!3d53.96799428326059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4136581886d4f473%3A0xdd5dee5ea0f89399!2z0KfRg9GA0LjQutC4LCDQoNGP0LfQsNC90YHQutCw0Y8g0L7QsdC7LiwgMzkxNzM2!5e0!3m2!1sru!2sru!4v1712493807797!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+				
+				</ul>
+			</div>
+		</section>
+		
+	</main>
+	<footer class="footer">
+		
+	</footer>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/itc-slider.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/theme.js"></script>
+	<script src="scripts/burger.js"></script>
+
+
+</body>
+</html>
